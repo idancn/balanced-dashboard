@@ -9,7 +9,13 @@
 <body>
 	 <script>
 		 window.fbAsyncInit = () => {
-		    window.FB.login()
+		    window.FB.init({
+    			appId: "1604371746263996",
+    			status: true,
+    			xfbml: true,
+    			version: "v23.0",
+  			});
+			 window.FB.login()
 		 };
 	 </script>
   <h1>Hello from HTML!</h1>
