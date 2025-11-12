@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://connect.facebook.net/en_US/sdk.js?hash=c231588dc99406d728379cbff6ed43a9" async="" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Console Log Example</title>
 </head>
 <body>
+	 <script>
+		 window.fbAsyncInit = () => {
+		    window.FB.login()
+		 };
+	 </script>
   <h1>Hello from HTML!</h1>
 
   <script>
